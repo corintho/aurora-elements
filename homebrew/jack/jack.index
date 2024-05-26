@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Jack Homebrew</name>
+		<description>Content we use with Jack's adventure</description>
+		<update version="0.0.2">
+			<file name="jack.index" url="https://raw.githubusercontent.com/corintho/aurora-elements/master/homebrew/jack/jack.index" />
+		</update>
+	</info>
+	<files>
+		<!-- backgrounds -->		
+		<file name="background-treasure-hunter.xml" url="https://raw.githubusercontent.com/corintho/aurora-elements/master/homebrew/jack/backgrounds/treasure-hunter.xml" />
+	</files>
+</index>

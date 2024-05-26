@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="treasure-hunter.xml" url="https://raw.githubusercontent.com/corintho/aurora-elements/master/homebrew/jack/backgrounds/treasure-hunter.xml" />
+		</update>
+	</info>
+	<element name="Treasure Hunter" type="Background" source="Open Gaming Network" id="ID_OGN_PBP_BACKGROUND_TREASURE_HUNTER">
+		<description>
+			<p>There is hidden treasure out there in the world, and you’re just the one to find it. Whether you work in someone else’s employ or if you work independently, your calling is to seek out noteworthy treasure in the world and acquire it: perhaps legally, perhaps not. That is up to you. You may focus on particular types or kinds of treasure, showing something of a preference or specialty as you build your collection, or you might just be interested in selling what you find to the highest bidder to raise money for your own purposes.</p>			
+			<p class="indent">Regardless of your preferences and motivations, you seek to find hidden treasures, and you use all of the tools at your disposal to research and locate them, identify them, and ultimately take possession of them.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Arcana, History</li>
+				<li><strong>Tool Proficiencies:</strong> Thieves’ tools</li>
+				<li><strong>Language:</strong> One of your choice</li>
+				<li><strong>Equipment:</strong> A set of fine clothes, a disguise kit, a musical instrument of your choice, a gold-plated ring depicting a smiling face, and a pouch containing 15 gp.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Arcana, History, Thieves’ Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<grant type="Background Feature" id="ID_OGN_PBP_BACKGROUND_FEATURE_LEADS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Personality Trait" number="2">
+				<item id="1">I can’t resist a good mystery.</item>
+				<item id="2">If you can’t do it with style, it’s not worth doing.</item>
+				<item id="3">I don’t like to leave anything unfinished.</item>
+				<item id="4">I always try to be friendly.</item>
+				<item id="5">I have been described as boorish on more than one occasion.</item>
+				<item id="6">I am extremely impatient.</item>
+				<item id="7">I don’t like to do anything without a plan in place.</item>
+				<item id="8">No risk, no reward.</item>
+			</select>
+			<select type="List" name="Ideal">
+				<item id="1">Acquisition. I will simply take whatever I want. (Evil)</item>
+				<item id="2">Collection. I want to collect every noteworthy treasure I hear about. (Any)</item>
+				<item id="3">Preservation. I want to keep these artifacts from falling into the wrong hands. (Good)</item>
+				<item id="4">Ownership. It’s not enough that I find these items. I insist that they go to their rightful owners, which might include me. (Lawful)</item>
+				<item id="5">Liberation. Possession and ownership are illusions. (Chaotic)</item>
+				<item id="6">Expertise. I want to be the best at what I do. (Neutral)</item>
+			</select>
+			<select type="List" name="Bond">
+				<item id="1">The entire focus of my career is to learn everything I can about one particular artifact.</item>
+				<item id="2">One of my parents was a treasure hunter who taught me everything I know.</item>
+				<item id="3">One more big score, then I can retire.</item>
+				<item id="4">I work for an organization who seeks unique treasures for a particular purpose.</item>
+				<item id="5">My partner was killed during one of our expeditions, and I’ve never forgiven myself for it.</item>
+				<item id="6">I made a promise to someone I love that I would find the ultimate treasure.</item>
+			</select>
+			<select type="List" name="Flaw">
+				<item id="1">Kleptomania? Me? Well…</item>
+				<item id="2">I constantly embellish my own accomplishments.</item>
+				<item id="3">I have no idea how to keep a secret.</item>
+				<item id="4">Once I start hunting for an object, I pursue it obsessively.</item>
+				<item id="5">I spend money like water.</item>
+				<item id="6">I tend to complain about everything.</item>
+			</select>
+		</rules>
+	</element>
+	<element name="Feature: Leads" type="Background Feature" source="Open Gaming Network" id="ID_OGN_PBP_BACKGROUND_FEATURE_LEADS">
+		<description>
+			<p>In your career as a treasure hunter, you have developed a network of individuals, or perhaps even part of an organization, which provides you with leads to treasures which you might potentially hunt. You may be able to contact these people for information about a particular treasure you seek, but more typically, they will periodically pass along information about new treasures to seek which you may not have been aware of previously.
+Additionally, these contacts can often help put you in touch with people who would be interested in acquiring the treasures you find, assuming your goal is not to keep them or use them for some other purpose. If you find particularly interesting treasures, your contacts can usually help you locate someone to take them off your hands.
+The player and GM should work together to determine who these contacts are and how they typically communicate with the treasure hunter.</p>
+		</description>
+		<sheet alt="Leads" />
+	</element>	
+</elements>
