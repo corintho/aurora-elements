@@ -3,7 +3,7 @@
 	<info>
 		<name>Jack Homebrew</name>
 		<description>Content we use with Jack's adventure</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="jack.index" url="https://raw.githubusercontent.com/corintho/aurora-elements/master/homebrew/jack/jack.index" />
 		</update>
 	</info>

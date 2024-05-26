@@ -17,12 +17,13 @@
 			</ul>
 		</description>
 		<setters>
-			<set name="short">Arcana, History, Thieves’ Tools</set>
+			<set name="short">Arcana, History, Thieves’ Tools, Language</set>
 		</setters>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<select type="Language" name="Language (Treasure Hunter)" supports="Standard||Exotic" />
 			<grant type="Background Feature" id="ID_OGN_PBP_BACKGROUND_FEATURE_LEADS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
 			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
 			<select type="List" name="Personality Trait" number="2">
